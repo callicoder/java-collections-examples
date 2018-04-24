@@ -1,4 +1,4 @@
-## Java Collections Framework Tutorials
+## Java Collections Framework Tutorials with Simple Examples
 
 1. [Java ArrayList Tutorial with Examples](https://www.callicoder.com/java-arraylist/)
 
