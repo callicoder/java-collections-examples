@@ -11,13 +11,13 @@ public class IterateOverLinkedHashMapExample {
         userCityMapping.put("David", "Paris");
         userCityMapping.put("Jesse", "California");
 
-        System.out.println("=== Iterating over a LinkedHashMap using Java 8 forEach loop ===");
+        System.out.println("=== Iterating over a LinkedHashMap using Java 8 forEach and lambda ===");
         userCityMapping.forEach((user, city) -> {
             System.out.println(user + " => " + city);
         });
 
 
-        System.out.println("\n=== Iterating over the LinkedHashMap's entrySet using Java 8 forEach loop ===");
+        System.out.println("\n=== Iterating over the LinkedHashMap's entrySet using Java 8 forEach and lambda ===");
         userCityMapping.entrySet().forEach(entry -> {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         });

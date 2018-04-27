@@ -11,7 +11,7 @@ public class IterateOverLinkedListExample {
         humanSpecies.add("Homo Erectus");
         humanSpecies.add("Home Habilis");
 
-        System.out.println("=== Iterate over a LinkedList using Java 8 forEach loop ===");
+        System.out.println("=== Iterate over a LinkedList using Java 8 forEach and lambda ===");
         humanSpecies.forEach(name -> {
             System.out.println(name);
         });

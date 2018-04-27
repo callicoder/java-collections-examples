@@ -11,7 +11,7 @@ public class IterateOverHashMap {
         employeeSalary.put("Mark", 95000.00);
         employeeSalary.put("Steven", 134000.00);
 
-        System.out.println("=== Iterating over a HashMap using Java 8 forEach loop ===");
+        System.out.println("=== Iterating over a HashMap using Java 8 forEach and lambda ===");
         employeeSalary.forEach((employee, salary) -> {
             System.out.println(employee + " => " + salary);
         });
@@ -24,7 +24,7 @@ public class IterateOverHashMap {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
 
-        System.out.println("\n=== Iterating over the HashMap's entrySet using Java 8 forEach loop ===");
+        System.out.println("\n=== Iterating over the HashMap's entrySet using Java 8 forEach and lambda ===");
         employeeSalary.entrySet().forEach(entry -> {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         });

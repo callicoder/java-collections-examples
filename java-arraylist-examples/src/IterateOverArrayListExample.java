@@ -11,7 +11,7 @@ public class IterateOverArrayListExample {
         tvShows.add("Friends");
         tvShows.add("Prison break");
 
-        System.out.println("=== Iterate using Java 8 forEach loop ===");
+        System.out.println("=== Iterate using Java 8 forEach and lambda ===");
         tvShows.forEach(tvShow -> {
             System.out.println(tvShow);
         });

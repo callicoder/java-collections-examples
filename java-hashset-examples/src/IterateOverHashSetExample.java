@@ -12,7 +12,7 @@ public class IterateOverHashSetExample {
         programmingLanguages.add("PHP");
         programmingLanguages.add("Ruby");
 
-        System.out.println("=== Iterate over a HashSet using Java 8 forEach loop ===");
+        System.out.println("=== Iterate over a HashSet using Java 8 forEach and lambda ===");
         programmingLanguages.forEach(programmingLanguage -> {
             System.out.println(programmingLanguage);
         });
