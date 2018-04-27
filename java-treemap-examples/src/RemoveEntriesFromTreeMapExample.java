@@ -23,7 +23,7 @@ public class RemoveEntriesFromTreeMapExample {
             System.out.println(countryName + " does not exist, or it is mapped to a null value");
         }
 
-        // Remove the mapping for a given key only if it is mapped to a given value
+        // Remove the mapping for the given key only if it is mapped to the given value
         countryName = "India";
         boolean isRemoved = countryISOCodeMapping.remove(countryName, "IA");
         System.out.println("Was the mapping removed for " + countryName + "? : " + isRemoved);

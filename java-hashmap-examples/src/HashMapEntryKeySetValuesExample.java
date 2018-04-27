@@ -15,14 +15,14 @@ public class HashMapEntryKeySetValuesExample {
 
         // HashMap's entry set
         Set<Map.Entry<String, String>> countryISOCodeEntries = countryISOCodeMapping.entrySet();
-        System.out.println(countryISOCodeEntries);
+        System.out.println("countryISOCode entries : " + countryISOCodeEntries);
 
         // HashMap's key set
         Set<String> countries = countryISOCodeMapping.keySet();
-        System.out.println("Countries : " + countries);
+        System.out.println("countries : " + countries);
 
         // HashMap's values
         Collection<String> isoCodes = countryISOCodeMapping.values();
-        System.out.println("ISO Codes : " + isoCodes);
+        System.out.println("isoCodes : " + isoCodes);
     }
 }

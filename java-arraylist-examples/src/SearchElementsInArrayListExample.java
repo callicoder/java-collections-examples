@@ -15,7 +15,7 @@ public class SearchElementsInArrayListExample {
         // Check if an ArrayList contains a given element
         System.out.println("Does names array contain \"Bob\"? : " + names.contains("Bob"));
 
-        // Find the index of first occurrence of an element in an ArrayList
+        // Find the index of the first occurrence of an element in an ArrayList
         System.out.println("indexOf \"Steve\": " + names.indexOf("Steve"));
         System.out.println("indexOf \"Mark\": " + names.indexOf("Mark"));
 

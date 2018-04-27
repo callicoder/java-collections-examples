@@ -14,7 +14,7 @@ public class UnsafeArrayListExample {
         // Create a thread pool of size 10
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
-        // Create a Runnable task that increments the each element of the ArrayList by one
+        // Create a Runnable task that increments each element of the ArrayList by one
         Runnable task = () -> {
             incrementArrayList(unsafeArrayList);
         };

@@ -11,6 +11,9 @@ public class CreateHashMapExample {
         numberMapping.put("Two", 2);
         numberMapping.put("Three", 3);
 
+        // Add a new key-value pair only if the key does not exist in the HashMap, or is mapped to `null`
+        numberMapping.putIfAbsent("Four", 4);
+
         System.out.println(numberMapping);
     }
 }

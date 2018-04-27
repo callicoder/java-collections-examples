@@ -10,16 +10,18 @@ public class RemoveKeysFromHashMapExample {
 
         System.out.println("Husband-Wife Mapping : " + husbandWifeMapping);
 
-        // Unfortunately, Chris got divorced. Let's remove him from the mapping
+        // Remove a key from the HashMap
+        // Ex - Unfortunately, Chris got divorced. Let's remove him from the mapping
         String husband = "Chris";
         String wife = husbandWifeMapping.remove(husband);
 
         System.out.println("Couple (" + husband + " => " + wife + ") got divorced");
         System.out.println("New Mapping : " + husbandWifeMapping);
 
-        // Divorce "Jack" only if He is married to "Linda"
+        // Remove a key from the HashMap only if it is mapped to the given value
+        // Ex - Divorce "Jack" only if He is married to "Linda"
         boolean isRemoved = husbandWifeMapping.remove("Jack", "Linda");
-        System.out.println("Did Jack got removed from the mapping? : " + isRemoved);
+        System.out.println("Did Jack get removed from the mapping? : " + isRemoved);
 
         // remove() returns null if the mapping was not found for the supplied key
         wife = husbandWifeMapping.remove("David");

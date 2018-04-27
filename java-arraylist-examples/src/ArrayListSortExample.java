@@ -20,7 +20,7 @@ public class ArrayListSortExample {
             }
         });
 
-        // The above `sort()` method call can also be written simply using lambda expressions
+        // The above `sort()` method call can also be written simply using lambda expression
         names.sort((name1, name2) -> name1.compareTo(name2));
 
         // Following is an even more concise solution

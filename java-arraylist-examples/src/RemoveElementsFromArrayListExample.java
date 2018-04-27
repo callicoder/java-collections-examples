@@ -19,11 +19,12 @@ public class RemoveElementsFromArrayListExample {
         programmingLanguages.remove(5);
         System.out.println("After remove(5): " + programmingLanguages);
 
-        // Remove the element "Kotlin" (The remove() method returns false if the element does not exist in the ArrayList)
+        // Remove the first occurrence of the given element from the ArrayList
+        // (The remove() method returns false if the element does not exist in the ArrayList)
         boolean isRemoved = programmingLanguages.remove("Kotlin");
         System.out.println("After remove(\"Kotlin\"): " + programmingLanguages);
 
-        // Remove all the elements belonging to the collection scriptingLanguages
+        // Remove all the elements that exist in a given collection
         List<String> scriptingLanguages = new ArrayList<>();
         scriptingLanguages.add("Python");
         scriptingLanguages.add("Ruby");
