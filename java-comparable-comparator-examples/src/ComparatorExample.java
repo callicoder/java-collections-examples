@@ -27,9 +27,9 @@ public class ComparatorExample {
         Collections.sort(employees, Comparator.comparing(Employee::getJoiningDate));
         System.out.println("\nEmployees (Sorted by JoiningDate) : " + employees);
 
-        // Sort employees by descending order of Name
+        // Sort employees by Name in descending order
         Collections.sort(employees, Comparator.comparing(Employee::getName).reversed());
-        System.out.println("\nEmployees (Sorted by Name Descending Order) : " + employees);
+        System.out.println("\nEmployees (Sorted by Name in descending order) : " + employees);
 
         // Chaining multiple Comparators
         // Sort by Salary. If Salary is same then sort by Name

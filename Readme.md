@@ -13,3 +13,7 @@
 6. [Java HashSet Tutorial with Examples](https://www.callicoder.com/java-hashset/)
 
 7. [Java TreeSet Tutorial with Examples](https://www.callicoder.com/java-treeset/)
+
+8. [Java Stack Class Tutorial with Examples](https://www.callicoder.com/java-stack/)
+
+9. [Java Queue Interface Tutorial with Examples](https://www.callicoder.com/java-queue/)

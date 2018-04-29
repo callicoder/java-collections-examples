@@ -11,11 +11,11 @@ public class RemoveEntriesFromLinkedHashMapExample {
 
         System.out.println("husbandWifeMapping : " + husbandWifeMapping);
 
-        // Remove the entry with the given key from the LinkedHashMap
+        // Remove a key from the LinkedHashMap
         String wife = husbandWifeMapping.remove("John");
         System.out.println("Removed John and his wife " + wife + " from the mapping. New husbandWifeMapping : " + husbandWifeMapping);
 
-        // Remove the entry with the given key from the LinkedHashMap only if the key is mapped to the given value
+        // Remove a key from the LinkedHashMap only if it is mapped to the given value
         boolean isRemoved = husbandWifeMapping.remove("John", "Susan");
         System.out.println("Did John get removed from the mapping? : " + isRemoved);
     }
