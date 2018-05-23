@@ -4,19 +4,19 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 class Employee implements Comparable<Employee> {
-    private Integer id;
+    private int id;
     private String name;
 
-    public Employee(Integer id, String name) {
+    public Employee(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -34,7 +34,7 @@ class Employee implements Comparable<Employee> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Objects.equals(id, employee.id);
+        return id == employee.id;
     }
 
     @Override
@@ -45,7 +45,7 @@ class Employee implements Comparable<Employee> {
     // Compare employees based on their IDs
     @Override
     public int compareTo(Employee employee) {
-        return this.getId().compareTo(employee.getId());
+        return this.getId() - employee.getId();
     }
 
     @Override
@@ -65,14 +65,14 @@ public class TreeSetUserDefinedObjectExample {
         /*
            The requirement for a TreeSet of user defined objects is that
 
-           1. Either the object should implement the Comparable interface and provide
+           1. Either the class should implement the Comparable interface and provide
               the implementation for the compareTo() function.
            2. Or you should provide a custom Comparator while creating the TreeSet.
         */
 
         SortedSet<Employee> employees = new TreeSet<>();
 
-        // TreeSet uses the compareTo() method of the Book class to compare two books and sort them
+        // TreeSet uses the compareTo() method of the Employee class to compare two employees and sort them
         employees.add(new Employee(1010, "Rajeev"));
         employees.add(new Employee(1005, "Sachin"));
         employees.add(new Employee(1008, "Chris"));
@@ -80,7 +80,7 @@ public class TreeSetUserDefinedObjectExample {
         System.out.println("Employees (sorted based on Employee class's compareTo() function)");
         System.out.println(employees);
 
-        // Using a Custom Comparator
+        // Providing a Custom Comparator (This comparator compares the employees based on their Name)
         employees = new TreeSet<>(Comparator.comparing(Employee::getName));
 
         employees.add(new Employee(1010, "Rajeev"));
