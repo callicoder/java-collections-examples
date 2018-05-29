@@ -3,19 +3,17 @@ import java.util.PriorityQueue;
 public class CreatePriorityQueueExample {
     public static void main(String[] args) {
         // Create a Priority Queue
-        PriorityQueue<String> namePriorityQueue = new PriorityQueue<>();
+        PriorityQueue<Integer> numbers = new PriorityQueue<>();
 
         // Add items to a Priority Queue (ENQUEUE)
-        namePriorityQueue.add("Lisa");
-        namePriorityQueue.add("Robert");
-        namePriorityQueue.add("John");
-        namePriorityQueue.add("Chris");
-        namePriorityQueue.add("Angelina");
-        namePriorityQueue.add("Joe");
+        numbers.add(750);
+        numbers.add(500);
+        numbers.add(900);
+        numbers.add(100);
 
         // Remove items from the Priority Queue (DEQUEUE)
-        while (!namePriorityQueue.isEmpty()) {
-            System.out.println(namePriorityQueue.remove());
+        while (!numbers.isEmpty()) {
+            System.out.println(numbers.remove());
         }
 
     }

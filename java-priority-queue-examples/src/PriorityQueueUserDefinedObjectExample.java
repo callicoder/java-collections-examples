@@ -1,11 +1,11 @@
 import java.util.Objects;
 import java.util.PriorityQueue;
 
-class Person implements Comparable<Person> {
+class Employee implements Comparable<Employee> {
     private String name;
     private double salary;
 
-    public Person(String name, double salary) {
+    public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -30,9 +30,9 @@ class Person implements Comparable<Person> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Double.compare(person.salary, salary) == 0 &&
-                Objects.equals(name, person.name);
+        Employee employee = (Employee) o;
+        return Double.compare(employee.salary, salary) == 0 &&
+                Objects.equals(name, employee.name);
     }
 
     @Override
@@ -42,18 +42,18 @@ class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Employee{" +
                 "name='" + name + '\'' +
                 ", salary=" + salary +
                 '}';
     }
 
-    // Compare two person objects by their salary
+    // Compare two employee objects by their salary
     @Override
-    public int compareTo(Person person) {
-        if(this.getSalary() > person.getSalary()) {
+    public int compareTo(Employee employee) {
+        if(this.getSalary() > employee.getSalary()) {
             return 1;
-        } else if (this.getSalary() < person.getSalary()) {
+        } else if (this.getSalary() < employee.getSalary()) {
             return -1;
         } else {
             return 0;
@@ -64,20 +64,30 @@ class Person implements Comparable<Person> {
 
 public class PriorityQueueUserDefinedObjectExample {
     public static void main(String[] args) {
-        PriorityQueue<Person> personPriorityQueue = new PriorityQueue<>();
+        /*
+           The requirement for a PriorityQueue of user defined objects is that
+
+           1. Either the class should implement the Comparable interface and provide
+              the implementation for the compareTo() function.
+           2. Or you should provide a custom Comparator while creating the PriorityQueue.
+        */
+
+        // Create a PriorityQueue
+        PriorityQueue<Employee> employeePriorityQueue = new PriorityQueue<>();
 
         // Add items to the Priority Queue
-        personPriorityQueue.add(new Person("Rajeev", 100000.00));
-        personPriorityQueue.add(new Person("Chris", 145000.00));
-        personPriorityQueue.add(new Person("Andrea", 115000.00));
-        personPriorityQueue.add(new Person("Jack", 167000.00));
+        employeePriorityQueue.add(new Employee("Rajeev", 100000.00));
+        employeePriorityQueue.add(new Employee("Chris", 145000.00));
+        employeePriorityQueue.add(new Employee("Andrea", 115000.00));
+        employeePriorityQueue.add(new Employee("Jack", 167000.00));
 
 
         /*
-            The compare() function implemented in the Person class is used to determine in what order the objects should be dequeued.
+            The compareTo() method implemented in the Employee class is used to determine
+            in what order the objects should be dequeued.
         */
-        while (!personPriorityQueue.isEmpty()) {
-            System.out.println(personPriorityQueue.remove());
+        while (!employeePriorityQueue.isEmpty()) {
+            System.out.println(employeePriorityQueue.remove());
         }
     }
 }
