@@ -17,3 +17,7 @@
 8. [Java Stack Class Tutorial with Examples](https://www.callicoder.com/java-stack/)
 
 9. [Java Queue Interface Tutorial with Examples](https://www.callicoder.com/java-queue/)
+
+10. [Java Priority Queue Tutorial with Examples](https://www.callicoder.com/java-priority-queue/)
+
+11. [Java Comparable and Comparator interface Examples](https://www.callicoder.com/java-comparable-comparator/)
