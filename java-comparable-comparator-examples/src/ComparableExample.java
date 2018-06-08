@@ -18,10 +18,5 @@ public class ComparableExample {
         Collections.sort(employees);
 
         System.out.println("\nEmployees (After Sorting) : " + employees);
-
-        // This will use the same `compareTo()` method of the `Employee` class but will reverse the order
-        Collections.sort(employees, Comparator.reverseOrder());
-        System.out.println("\nEmployees (After Sorting with reverseOrder)" + employees);
     }
-
 }
